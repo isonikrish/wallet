@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { Alert } from "react-native";
-const API_URL = "http://localhost:5001/api";
+const API_URL = `${process.env.EXPO_PUBLIC_BACKEND_URL}/api`;
 
 export const useTransactions = (userId) => {
   const [transactions, setTransactions] = useState([]);
@@ -8,8 +8,8 @@ export const useTransactions = (userId) => {
     balance: 0,
     income: 0,
     expenses: 0,
-  });
-  const [isLoading, setIsLoading] = useState(true);
+  })
+  const [isLoading, setIsLoading] = useState(true)
 
   const fetchTransactions = useCallback(async () => {
     try {

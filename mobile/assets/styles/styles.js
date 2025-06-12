@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: coffeeTheme.white,
     fontWeight: "bold",
-    fontSize: 16
+    fontSize: 16,
   },
   illustration: {
     width: 200,
@@ -57,6 +57,45 @@ export const styles = StyleSheet.create({
   },
   link: {
     color: "blue",
-    textDecorationLine: "underline"
-  }
+    textDecorationLine: "underline",
+  },
+  loadingContainer: {
+    padding: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  content: {
+    padding: 20,
+    paddingBottom: 0,
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 20,
+    paddingHorizontal: 0,
+    paddingVertical: 12,
+  },
+  headerLeft: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+  },
+   headerLogo: {
+    width: 75,
+    height: 75,
+  },
+  welcomeContainer: {
+    flex: 1,
+  },
+  welcomeText: {
+    fontSize: 14,
+    color: coffeeTheme.textLight,
+    marginBottom: 2,
+  },
+  usernameText: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: coffeeTheme.text,
+  },
 });
